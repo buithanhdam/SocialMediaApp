@@ -1,0 +1,175 @@
+.Auth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width:  80%;
+    margin: auto;
+    margin-top: 2.5rem; 
+
+}
+.container>.form-container form button{
+    border-radius: 20px;
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+.container .form-container form button:active{
+    transform: scale(0.95);
+}
+.container>.form-container form button:focus{
+    outline: none;
+}
+.signHere{
+    display: none;
+}
+.container .form-container form h1{
+    font-weight: bold;
+    margin: 0;
+    color: var(--textColor);
+}
+.container .form-container form p{
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+    color: var(--textColor);
+}
+.container .form-container form span{
+    font-size: 12px;
+    color: var(--textColor);
+}
+.container .form-container form a{
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+    color: var(--textColor);
+}
+
+.container{
+    background-color: var(--cardColor);
+    border-radius: 10px ;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 80%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.container .form-container form{
+    background-color: var(--cardColor);
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* .container .form-container form .social-container{
+    margin: 20px 0;
+
+}
+.social-container a { 
+    border: 1px solid #eee;
+     border-radius: 50%; 
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0 5px;
+     height: 40px;
+     width: 40px;
+     color: var(--white);
+}
+.social-container a:hover{
+    background: var(--main-color);
+    border: none;
+
+} */
+.container .form-container form input{
+    background: #eee;
+    border-radius: 10px;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    outline: none;
+}
+.container .form-container form .field{
+    width: 100%;
+
+}
+
+
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+.container .sign-in-container{
+    left: 0;
+    width: 50%;  
+    /* z-index: 2; */
+
+}
+.container .sign-up-container{
+    left: 50%;
+    width: 50%;
+    /* opacity: 0; */
+    /* z-index: 1; */
+
+    
+}
+.container .overlay-container{
+    display: flex;
+    top: 0;
+    /* left: 100%; */
+    width: 50%;
+    height: 100%;
+}
+.container .overlay-container .overlay{
+        position: relative;
+        /* left: -100%; */
+        height: 100%;
+        width: 100%;
+       
+}
+.container .overlay-container .overlay .overlay-panel{
+    /* position: absolute; */
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+
+}
+
+.container .overlay-container.overlay-left{
+    margin-right: 50%;
+    background: linear-gradient(to right, var(--main-color),var(--rainbow-color)) 
+    no-repeat 0 0 / cover;
+
+}
+.container .overlay-container.overlay-right{
+    margin-left: 50%; 
+    background: linear-gradient(to right, var(--main-color),var(--rainbow-color)) 
+    no-repeat 0 0 / cover;
+}
+
+

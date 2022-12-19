@@ -1,0 +1,131 @@
+.ProfileCard{
+    gap: 0.3rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5rem ;
+    background-color: var(--cardColor);
+    overflow-x: clip;
+    padding-bottom: 10px;
+}
+.ProfileImages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 1.5rem ;
+    
+}
+.mainImage{
+    display: flex;
+    background-color: var(--main-color);
+    overflow: hidden;
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    border-radius: 50px;
+    bottom: -3rem;
+   border: 0.2rem solid var(--profileImageBorder);
+  
+}
+.mainImage img{
+    border-radius: 50px;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+}
+/* .backImage{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 1.5rem ;
+    
+}
+.backImage img{
+    border-radius: 1.5rem;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+} */
+.ProfileImages .backImage{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 11rem;
+    
+
+    border-radius: 1.5rem ;
+}
+
+.ProfileImages .backImage>img{
+    border-radius: 10px;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+.ProfileName{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 0.3rem;
+}
+
+.ProfileName>span:nth-child(1){
+    font-weight: bold;
+
+}
+.FollowingStatus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+
+}
+.FollowingStatus .hr{
+    width: 85%;
+    height: 1px;
+    background-color: var(--hrColor);
+}
+
+.FollowingStatus > .FollowArea{
+    display: flex;
+    gap: 1rem;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+}
+.Follow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+.Follow >span:nth-of-type(1){
+    font-weight: bold;
+}
+.Follow >span:nth-of-type(2){
+    font-size: 13px;
+    color: var(--gray);
+}
+.FollowingStatus .FollowArea .vl{
+    height: 100%;
+    width: 1px;
+    background-color: var(--hrColor);
+}
+.ProfileCard >span{
+    margin-top: 1rem;
+    font-weight: bold;
+    color: var(--main-color);
+    align-self: center;
+    justify-self: center;
+    gap: 0.3rem;
+    cursor: pointer;
+}

@@ -1,0 +1,50 @@
+@import url('../../App.css');
+
+.LogoNSearch{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.Search{
+    display: flex;
+    background-color:var(--inputColor) ;
+    border-radius: 10px;
+    padding: 5px;
+}
+.Search>input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+.Search-icon{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(106.23deg, var(--main-color),#009b5a 100%);
+    border-radius: 5px;
+    padding: 4px;
+    color: white;
+}
+
+
+.logo {
+    color: var(--main-color);
+   text-align: center;
+
+}
+.logo span{
+    color: var(--main-color);
+    text-align: center;
+}
+.logo .material-symbols-outlined{
+   
+
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 80
+
+
+}
